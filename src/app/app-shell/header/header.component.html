@@ -1,0 +1,20 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12 col-md-8 col-lg-12 p-0">
+            <div class="navbar navbar-dark bg-primary shadow-sm col-12 col-md-12 col-lg-12">
+                <div class="navbar-brand align-item-center d-flex" style="margin-left: 8px;">
+                    <i style="font-size: 30px;" class="bi bi-cart3"></i>&nbsp;
+                    <strong style="font-size: 30px;">Shopping Cart</strong>
+                    <!-- <div class="form-group">
+                        <input type="text" class="form-control position-relative" placeholder="search products">
+                    </div> -->
+                    <!-- <span class="bi bi-search search-icon"></span> -->
+                </div>
+                <button class="btn btn-primary" (click)="cartPage()">
+                    <i style="font-size: 30px;" class="bi bi-cart-plus"></i>
+                    <div style="font-size: 10px;" class="badge bg-danger">{{totalItem}}</div>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

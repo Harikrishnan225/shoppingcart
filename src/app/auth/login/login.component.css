@@ -1,0 +1,30 @@
+body {
+  background-color: #f5f5f5;
+}
+.login-form {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin-top: 100px;
+  line-height: 3;
+}
+.form-control:focus {
+  box-shadow: none;
+}
+.login-btn {
+  background-color: #28a745;
+  border: none;
+  border-radius: 2px;
+  color: #fff;
+  padding: 8px 25px;
+  margin-top: 20px;
+}
+.login-btn:hover {
+  background-color: #218838;
+}
+.app-icon-btn {
+  top: 49px;
+  width: 30px;
+  height: 36px;
+}

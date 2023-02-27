@@ -1,0 +1,35 @@
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-5 col-sm-12">
+            <div class="login-form h-75">
+                <h2 class="text-center">Login Form</h2>
+                <form [formGroup]="loginForm">
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" class="form-control" formControlName="email"
+                            placeholder="Enter Your Email">
+                        <!-- <div class="text-danger"
+                            *ngIf="loginForm.get('firstName')?.errors?.['required'] && loginForm.get('firstName')?.touched">Email is required</div> -->
+                    </div>
+                    <div class="form-group position-relative">
+                        <label for="password">Password</label>
+                        <input [type]="passwordInputType" placeholder="Enter Your Password" name="password"
+                            id="password" class="form-control" formControlName="password">
+                        <button class="app-icon-btn position-absolute end-0 border-0 d-flex align-items-center"
+                            type="button" (click)="togglePasswordType(passwordInputTypes.passwordInputType)">
+                            <i [class]="[
+                            'bi',
+                            passwordInputType === 'password'
+                              ? 'bi-eye-slash-fill'
+                              : 'bi-eye-fill'
+                          ]"></i>
+                        </button>
+                    </div>
+                    <button type="submit" class="btn btn-block login-btn w-100 rounded" (click)=" login_submit()"
+                       >Login</button>
+                       <!-- [disabled]="loginForm.invalid" -->
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
